@@ -2,6 +2,7 @@ package br.com.aisdigital.androidchallenge.viewmodel
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
+import br.com.aisdigital.androidchallenge.BaseApplicationTest
 import br.com.aisdigital.androidchallenge.R
 import br.com.aisdigital.androidchallenge.model.UserInfo
 import junit.framework.TestCase.assertEquals
@@ -9,8 +10,10 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
+@Config(application = BaseApplicationTest::class)
 class ProfileViewModelTest {
 
     private lateinit var sut: ProfileViewModel

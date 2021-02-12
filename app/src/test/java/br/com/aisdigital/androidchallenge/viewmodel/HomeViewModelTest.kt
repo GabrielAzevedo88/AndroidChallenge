@@ -1,6 +1,7 @@
 package br.com.aisdigital.androidchallenge.viewmodel
 
 import android.view.View
+import br.com.aisdigital.androidchallenge.BaseApplicationTest
 import br.com.aisdigital.androidchallenge.internal.RequestStatus
 import br.com.aisdigital.androidchallenge.repository.TeamRepository
 import io.mockk.mockk
@@ -9,9 +10,10 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
-
+@Config(application = BaseApplicationTest::class)
 class HomeViewModelTest {
 
     private lateinit var sut: HomeViewModel

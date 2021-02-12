@@ -1,3 +1,8 @@
+# WARNING
+
+There is only one commit in this project. Well, I had to migrate it from another location. And he ended up losing his git history.
+
+
 # Android Challenge
 
 AIS Android Challenge

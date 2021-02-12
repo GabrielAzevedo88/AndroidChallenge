@@ -3,6 +3,7 @@ package br.com.aisdigital.androidchallenge.viewmodel
 import android.content.Context
 import android.view.View
 import androidx.test.core.app.ApplicationProvider
+import br.com.aisdigital.androidchallenge.BaseApplicationTest
 import br.com.aisdigital.androidchallenge.internal.AppRouter
 import br.com.aisdigital.androidchallenge.internal.RequestStatus
 import br.com.aisdigital.androidchallenge.repository.TeamRepository
@@ -12,8 +13,10 @@ import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
+@Config(application = BaseApplicationTest::class)
 class LoginViewModelTest {
 
     private lateinit var sut: LoginViewModel

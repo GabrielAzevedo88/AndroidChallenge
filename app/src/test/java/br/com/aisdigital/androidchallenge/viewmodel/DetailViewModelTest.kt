@@ -2,14 +2,17 @@ package br.com.aisdigital.androidchallenge.viewmodel
 
 import android.content.Context
 import androidx.test.core.app.ApplicationProvider
+import br.com.aisdigital.androidchallenge.BaseApplicationTest
 import br.com.aisdigital.androidchallenge.model.Team
 import junit.framework.TestCase.assertEquals
 import org.junit.Before
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.RobolectricTestRunner
+import org.robolectric.annotation.Config
 
 @RunWith(RobolectricTestRunner::class)
+@Config(application = BaseApplicationTest::class)
 class DetailViewModelTest {
     private lateinit var sut: DetailViewModel
     private val resourcesMock = (ApplicationProvider.getApplicationContext() as Context).resources
